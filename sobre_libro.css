@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+header {
+  width: 100%;
+  height: 20%;
+  background: url("https://img.freepik.com/fotos-premium/concepto-guerra-siluetas-militares-que-luchan-contra-escena-fondo-cielo-niebla-guerra_532800-955.jpg")
+    no-repeat center;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+header .titulo_boton {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+header .titulo_boton .titulo {
+  padding: 10px 15px;
+  border: 2px solid white;
+  border-radius: 5px;
+  margin-top: 8px;
+  width: 100%;
+  text-align: center;
+}
+header .titulo_boton .Boton {
+  font-size: 20px;
+  font-family: "Wargate-Normal";
+  cursor: pointer;
+  background: rgb(21, 174, 21);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+header .titulo_boton .Boton:hover {
+  background: red;
+}
+header .titulo_boton .titulo h1 {
+  font-size: 40px;
+  color: rgb(64, 138, 64);
+  letter-spacing: 3px;
+}
+header .titulo_boton .titulo h2 {
+  font-size: 30px;
+}
+nav ul {
+  font-family: "Wargate-Normal";
+  list-style: none;
+}
+nav ul li {
+  display: inline-block;
+  padding: 10px;
+  margin-right: 5px;
+  color: white;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  position: relative;
+}
+nav ul li:hover {
+  background: white;
+}
+.main {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  background: rgb(123, 123, 40);
+  color: white;
+}
+.main .titulo {
+  width: 100%;
+  text-align: center;
+  margin-top: 5px;
+}
+.main .texto {
+  padding: 10px 15px;
+  text-align: justify;
+  line-height: 30px;
+}
+.main .texto span {
+  font-weight: bolder;
+  display: none;
+}
+.main .texto span a {
+  text-decoration: none;
+}
+.main .texto span a:hover {
+  color: red;
+}
+aside {
+  background: rgb(212, 208, 208);
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+}
+aside .otros_libros h2 {
+  text-align: center;
+  font-size: 30px;
+  color: blue;
+}
+aside .otros_libros {
+  margin: 10px auto;
+}
+aside .libros {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+aside .libros .libro {
+  width: 45%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 10px 10px;
+}
+aside .libros .libro h2 {
+  width: 100%;
+  text-align: center;
+  margin: 10px 0;
+}
+aside .libros .libro h2 a {
+  text-decoration: none;
+  color: green;
+}
+aside .libros .libro h2 a:hover {
+  text-decoration: underline;
+  color: red;
+}
+aside .libros .libro .imagen_libro {
+  width: 100%;
+}
+aside .libros .libro .imagen_libro img {
+  width: 100%;
+  border-radius: 10px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+aside .libros .libro .imagen_libro img:hover {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+*::selection {
+  background: greenyellow;
+}
+footer {
+  background: rgb(123, 123, 40);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer p {
+  text-align: center;
+  padding: 10px 15px;
+}
+footer .iconos {
+  margin-right: 10px;
+}
+footer .iconos i {
+  font-size: 30px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+footer .iconos .fa-facebook:hover {
+  background-color: rgb(40, 40, 203);
+  transition: background-color 0.5s ease;
+}
+footer .iconos .fa-instagram:hover {
+  background-color: rgb(178, 36, 131);
+  transition: background-color 0.5s ease;
+}
+footer .iconos .fa-x-twitter:hover {
+  background-color: rgb(54, 54, 54);
+  transition: background-color 0.3s ease;
+}
+.contactos {
+  display: none;
+}
+@media screen and (max-width: 500px) {
+  .main .texto span {
+    display: block;
+  }
+  nav {
+    display: none;
+  }
+  aside .libros .libro {
+    width: 100%;
+  }
+  footer {
+    flex-flow: column wrap;
+    justify-content: center;
+  }
+  .contactos {
+    display: block;
+    padding: 20px 0;
+  }
+  .contactos h2 {
+    font-size: 25px;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .contactos form > div,
+  .contactos form div input {
+    font-size: 15px;
+  }
+  .contactos form > div {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .contactos form div input {
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+  }
+  .contactos form div input:focus {
+    border: 4px solid #3196be;
+  }
+  .correo label {
+    text-align: center;
+  }
+  .contactos button {
+    margin: 10px 180px;
+    font-size: 15px;
+    padding: 15px 20px;
+    background: #52b788;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    transition: transform 0.5s;
+    cursor: pointer;
+  }
+  .contactos button:hover {
+    transform: translateY(-6px);
+  }
+}

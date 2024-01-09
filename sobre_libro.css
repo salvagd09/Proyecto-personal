@@ -32,7 +32,6 @@ header .titulo_boton .titulo {
 }
 header .titulo_boton .Boton {
   font-size: 20px;
-  font-family: "Wargate-Normal";
   cursor: pointer;
   background: rgb(21, 174, 21);
   margin-top: 10px;
@@ -53,7 +52,6 @@ header .titulo_boton .titulo h2 {
   font-size: 30px;
 }
 nav ul {
-  font-family: "Wargate-Normal";
   list-style: none;
 }
 nav ul li {

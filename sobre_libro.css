@@ -94,7 +94,7 @@ nav ul li:hover {
   text-decoration: none;
 }
 .main .texto span a:hover {
-  color: red;
+  color: rgb(46, 208, 48);
 }
 aside {
   background: rgb(212, 208, 208);
